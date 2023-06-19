@@ -31,15 +31,17 @@
   }
 
   &__button{
+    height: 40px;
     color: #fff;
-    background: url("/images/red-button.png");
-    background-repeat: no-repeat;
+    background: #D20129;
     padding: 10px 30px;
     padding-right: 60px;
     font-weight: 400;
     font-size: 16px;
     position: relative;
-    transition: 0.3s;
+    height: 40px;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+
 
     &:hover:after{
       transform: translateX(5px);
@@ -54,4 +56,12 @@
     }
   }
 
+}
+
+.tabulation-tour{
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr 2fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
