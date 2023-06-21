@@ -338,4 +338,50 @@
 
 .news--main{
   padding-top: 70px;
+  margin-bottom: 80px;
+}
+
+.news{
+
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &-card{
+    flex: 0 0 calc((100% - 120px) / 4);
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+
+    &:last-of-type{
+      margin-right: 0;
+    }
+
+    &__img{
+      margin-bottom: 15px;
+
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__date{
+      font-weight: 400;
+      font-size: 14px;
+      color: #888E9B;
+      margin-bottom: 10px;
+    }
+
+    &__title{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: #131F39;
+    }
+  }
+
 }

@@ -76,6 +76,25 @@ body {
 	}
 }
 
+.button{
+	font-weight: 400;
+	font-size: 14px;
+	color: #D20129;
+	position: relative;
+
+	&:after{
+		content: url("./../images/arrow-right.svg");
+		position: absolute;
+		right: -26px;
+		transition: 0.3s;
+		top: 0;
+	}
+
+	&:hover:after{
+		right: -31px;
+	}
+}
+
 
 
 
