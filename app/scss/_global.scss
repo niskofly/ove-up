@@ -5,7 +5,7 @@ body {
 	font-weight: 500;
 	font-size: 18px;
 	color: #131F39;
-	background: #F5F5F5;
+	background: #fff;
 }
 
 .wrapper {
@@ -17,6 +17,11 @@ body {
 .main {
 	flex: 1 0 auto;
 }
+
+.main--gray{
+	background: #F5F5F5;
+}
+
 .footer {
 	flex: 0 0 auto;
 }
@@ -27,9 +32,48 @@ body {
   padding: 0 15px;
 }
 
-.red-button{
+.title{
+	font-family: 'Unbounded';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 62px;
+	color: #131F39;
 
+	&__head{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+}
 
+.link{
+	font-weight: 400;
+	font-size: 14px;
+	color: #FFFFFF;
+	background: #888E9B;
+	padding: 7px 20px;
+	padding-right: 46px;
+	clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+	position: relative;
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:after{
+		content: url("./../images/arrow-white.svg");
+		position: absolute;
+		right: 20px;
+		transition: 0.3s;
+	}
+
+	&:hover:after{
+		right: 15px;
+	}
+
+	&:hover{
+		background: #D20129;
+	}
 }
 
 

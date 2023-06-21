@@ -424,57 +424,896 @@
 </header>
 <div class="wrapper">
     <main class="main">
-        <section class="banner">
-            <div class="container">
-                <div class="banner__row">
-                    <div class="banner__left"></div>
-                    <div class="banner__right">
-                        <div class="banner__title">Кубок Александра Овечкина</div>
-                        <div class="banner__text">Детско-юношеский хоккейный турнир «Кубок Александра Овечкина» —
-                            OviCup
-                        </div>
-                        <a href="#" class="banner__button red-button">
-                            Подробнее о турнире
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="tabs">
-            <div class="container">
-                <div class="tabs__row">
-                    <div class="tab-tour">
-                        <div class="tab-tour__header">
-                            <div class="tab-tour__title">Турнирная таблица</div>
-                            <div class="tab-tour__ask">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.82353 9.41177C8.49866 9.41177 8.23529 9.67513 8.23529 10C8.23529 10.3249 8.49866 10.5882 8.82353 10.5882H9.41177V14.1176H8.82353C8.49866 14.1176 8.23529 14.381 8.23529 14.7059C8.23529 15.0308 8.49866 15.2941 8.82353 15.2941H11.1765C11.5013 15.2941 11.7647 15.0308 11.7647 14.7059C11.7647 14.381 11.5013 14.1176 11.1765 14.1176H10.5882V10C10.5882 9.67513 10.3249 9.41177 10 9.41177H8.82353Z"
-                                          fill="#888E9B"/>
-                                    <path d="M11.1765 6.47059C11.1765 7.12034 10.6497 7.64706 10 7.64706C9.35025 7.64706 8.82353 7.12034 8.82353 6.47059C8.82353 5.82084 9.35025 5.29412 10 5.29412C10.6497 5.29412 11.1765 5.82084 11.1765 6.47059Z"
-                                          fill="#888E9B"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM1.17647 10C1.17647 5.1269 5.1269 1.17647 10 1.17647C14.8731 1.17647 18.8235 5.1269 18.8235 10C18.8235 14.8731 14.8731 18.8235 10 18.8235C5.1269 18.8235 1.17647 14.8731 1.17647 10Z"
-                                          fill="#888E9B"/>
-                                </svg>
+        <div class="main--gray">
+            <section class="banner">
+                <div class="container">
+                    <div class="banner__row">
+                        <div class="banner__left"></div>
+                        <div class="banner__right">
+                            <div class="banner__title">Кубок Александра Овечкина</div>
+                            <div class="banner__text">Детско-юношеский хоккейный турнир «Кубок Александра Овечкина» —
+                                OviCup
                             </div>
-                        </div>
-                        <div class="tab-tour__buttons">
-                            <div class="tab-tour__tabs">
-                                <div class="tab-tour-tab">Группа А</div>
-                                <div class="tab-tour-tab">Группа Б</div>
-                                <div class="tab-tour-tab">Плей-офф</div>
-                            </div>
-                            <div class="tabs__button">Подробнее</div>
-                        </div>
-                        <div class="tabulation-tour">
+                            <a href="#" class="banner__button red-button">
+                                Подробнее о турнире
+                            </a>
 
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="tabs">
+                <div class="container">
+                    <div class="tabs__row">
+                        <div class="tab-tour tab-card">
+                            <div class="tab-card__header">
+                                <div class="tab-card__title">Турнирная таблица</div>
+                                <div class="tab-card__ask">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.82353 9.41177C8.49866 9.41177 8.23529 9.67513 8.23529 10C8.23529 10.3249 8.49866 10.5882 8.82353 10.5882H9.41177V14.1176H8.82353C8.49866 14.1176 8.23529 14.381 8.23529 14.7059C8.23529 15.0308 8.49866 15.2941 8.82353 15.2941H11.1765C11.5013 15.2941 11.7647 15.0308 11.7647 14.7059C11.7647 14.381 11.5013 14.1176 11.1765 14.1176H10.5882V10C10.5882 9.67513 10.3249 9.41177 10 9.41177H8.82353Z"
+                                              fill="#888E9B"/>
+                                        <path d="M11.1765 6.47059C11.1765 7.12034 10.6497 7.64706 10 7.64706C9.35025 7.64706 8.82353 7.12034 8.82353 6.47059C8.82353 5.82084 9.35025 5.29412 10 5.29412C10.6497 5.29412 11.1765 5.82084 11.1765 6.47059Z"
+                                              fill="#888E9B"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM1.17647 10C1.17647 5.1269 5.1269 1.17647 10 1.17647C14.8731 1.17647 18.8235 5.1269 18.8235 10C18.8235 14.8731 14.8731 18.8235 10 18.8235C5.1269 18.8235 1.17647 14.8731 1.17647 10Z"
+                                              fill="#888E9B"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="tab-tour__buttons tab-card__buttons">
+                                <div class="tab-tour__tabs tab-card__tabs">
+                                    <div class="tab-tour-tab tab-card-tab active">Группа А</div>
+                                    <div class="tab-tour-tab tab-card-tab">Группа Б</div>
+                                    <div class="tab-tour-tab tab-card-tab">Плей-офф</div>
+                                </div>
+                                <a href="#" class="tab-tour__button tab-card__button">Подробнее</a>
+                            </div>
+                            <div class="tabulation-tour">
+                                <table>
+                                    <tbody class="tabulation-tour__group active">
+                                    <tr class="tabulation-tour__names tabulation-tour__grid">
+                                        <th>М</th>
+                                        <th>Команда</th>
+                                        <th>И</th>
+                                        <th>Ш</th>
+                                        <th>О</th>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">1</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Ястребы
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Омск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">32 : 10</td>
+                                        <td class="tabulation-tour__points">12</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">2</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-2.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Югра-ЮКИОР
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Ханты-Мансийск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">3</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-3.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Трактор
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Челябинск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">4</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-4.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Югра-ЮКИОР
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Новосибирск
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">5</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-5.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Металлург
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Новокузнецк
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">6</td>
+                                        <td class="tabulation-tour__team tabulation-tour-team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-6.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Пинские ястребы
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Пинск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    </tbody>
+                                    <tbody class="tabulation-tour__group">
+                                    <tr class="tabulation-tour__names tabulation-tour__grid">
+                                        <th>М</th>
+                                        <th>Команда</th>
+                                        <th>И</th>
+                                        <th>Ш</th>
+                                        <th>О</th>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">1</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/team-3.png" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Спартак
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Омск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">4</td>
+                                        <td class="tabulation-tour__pucks">32 : 10</td>
+                                        <td class="tabulation-tour__points">12</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">2</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-2.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Югра-ЮКИОР
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Ханты-Мансийск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">3</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-3.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Трактор
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Челябинск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">4</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-4.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Югра-ЮКИОР
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Новосибирск
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">6</td>
+                                        <td class="tabulation-tour__team tabulation-tour-team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-6.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Пинские ястребы
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Пинск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">5</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-5.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Металлург
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Новокузнецк
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    </tbody>
+                                    <tbody class="tabulation-tour__group">
+                                    <tr class="tabulation-tour__names tabulation-tour__grid">
+                                        <th>М</th>
+                                        <th>Команда</th>
+                                        <th>И</th>
+                                        <th>Ш</th>
+                                        <th>О</th>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">1</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Ястребы
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Омск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">32 : 10</td>
+                                        <td class="tabulation-tour__points">12</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">2</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-2.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Югра-ЮКИОР
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Ханты-Мансийск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">3</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-3.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Трактор
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Челябинск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">4</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-4.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Югра-ЮКИОР
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Новосибирск
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">5</td>
+                                        <td class="tabulation-tour__team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-5.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Металлург
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Новокузнецк
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    <tr class="tabulation-tour__grid">
+                                        <td class="tabulation-tour__place">6</td>
+                                        <td class="tabulation-tour__team tabulation-tour-team">
+                                            <a href="#" class="tabulation-tour-team">
+                                                <div class="tabulation-tour-team__img">
+                                                    <img src="./images/tab-team-6.svg" alt="team">
+                                                </div>
+                                                <div class="tabulation-tour-team__right">
+                                                    <div class="tabulation-tour-team__team">
+                                                        Пинские ястребы
+                                                    </div>
+                                                    <div class="tabulation-tour-team__city">
+                                                        Пинск
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td class="tabulation-tour__matches">6</td>
+                                        <td class="tabulation-tour__pucks">30 : 7</td>
+                                        <td class="tabulation-tour__points">11</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-players tab-card">
+                            <div class="tab-card__header">
+                                <div class="tab-card__title">Статистика игроков</div>
+                                <div class="tab-card__ask">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.82353 9.41177C8.49866 9.41177 8.23529 9.67513 8.23529 10C8.23529 10.3249 8.49866 10.5882 8.82353 10.5882H9.41177V14.1176H8.82353C8.49866 14.1176 8.23529 14.381 8.23529 14.7059C8.23529 15.0308 8.49866 15.2941 8.82353 15.2941H11.1765C11.5013 15.2941 11.7647 15.0308 11.7647 14.7059C11.7647 14.381 11.5013 14.1176 11.1765 14.1176H10.5882V10C10.5882 9.67513 10.3249 9.41177 10 9.41177H8.82353Z"
+                                              fill="#888E9B"/>
+                                        <path d="M11.1765 6.47059C11.1765 7.12034 10.6497 7.64706 10 7.64706C9.35025 7.64706 8.82353 7.12034 8.82353 6.47059C8.82353 5.82084 9.35025 5.29412 10 5.29412C10.6497 5.29412 11.1765 5.82084 11.1765 6.47059Z"
+                                              fill="#888E9B"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM1.17647 10C1.17647 5.1269 5.1269 1.17647 10 1.17647C14.8731 1.17647 18.8235 5.1269 18.8235 10C18.8235 14.8731 14.8731 18.8235 10 18.8235C5.1269 18.8235 1.17647 14.8731 1.17647 10Z"
+                                              fill="#888E9B"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="tab-players__buttons tab-card__buttons">
+                                <div class="tab-players__tabs tab-card__tabs">
+                                    <div class="tab-card-tab players-prev">
+                                        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.74461 0.400804C5.99559 0.14969 6.40263 0.149589 6.65374 0.400577C6.90486 0.651566 6.90496 1.0586 6.65397 1.30971L2.60653 5.35918H17.7707C18.1258 5.35918 18.4136 5.647 18.4136 6.00204C18.4136 6.35708 18.1258 6.6449 17.7707 6.6449H2.6095L6.65391 10.6903C6.90493 10.9414 6.90488 11.3484 6.6538 11.5995C6.40272 11.8505 5.99568 11.8504 5.74466 11.5993L0.627342 6.48074C0.496124 6.36305 0.413574 6.19218 0.413574 6.00204C0.413574 6.00186 0.413574 6.00222 0.413574 6.00204C0.413364 5.8373 0.476089 5.67196 0.601749 5.54623L5.74461 0.400804Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="tab-players-title tab-card-tab active">Бомбардиры</div>
+                                    <div class="tab-card-tab players-next ">
+                                        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.7378 0.400804C12.4868 0.14969 12.0798 0.149589 11.8287 0.400577C11.5776 0.651566 11.5775 1.0586 11.8285 1.30971L15.8759 5.35918H0.711705C0.356665 5.35918 0.0688477 5.647 0.0688477 6.00204C0.0688477 6.35708 0.356665 6.6449 0.711705 6.6449H15.8729L11.8285 10.6903C11.5775 10.9414 11.5775 11.3484 11.8286 11.5995C12.0797 11.8505 12.4867 11.8504 12.7378 11.5993L17.8551 6.48074C17.9863 6.36305 18.0688 6.19218 18.0688 6.00204C18.0688 6.00186 18.0688 6.00222 18.0688 6.00204C18.0691 5.8373 18.0063 5.67196 17.8807 5.54623L12.7378 0.400804Z" fill="white"/>
+                                        </svg>
+
+                                    </div>
+                                </div>
+                                <a href="#" class="tab-tour__button tab-card__button">Вся статистика</a>
+                            </div>
+                            <div class="tabulation-player">
+                                <div class="swiper-container">
+                                    <div class="swiper players-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <table>
+                                                    <tbody class="tabulation-card__group active">
+                                                    <tr class="tabulation-player__group">
+                                                        <th class="tabulation-player__matches">М</th>
+                                                        <th class="tabulation-player__person">Игрок</th>
+                                                        <th class="tabulation-player__points">Очки</th>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-1.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-2.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-3.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-4.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-5.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <table>
+                                                    <tbody class="tabulation-card__group active">
+                                                    <tr class="tabulation-player__group">
+                                                        <th class="tabulation-player__matches">М</th>
+                                                        <th class="tabulation-player__person">Игрок</th>
+                                                        <th class="tabulation-player__points">Очки</th>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-4.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-5.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-1.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-1.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-1.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <table>
+                                                    <tbody class="tabulation-card__group active">
+                                                    <tr class="tabulation-player__group">
+                                                        <th class="tabulation-player__matches">М</th>
+                                                        <th class="tabulation-player__person">Игрок</th>
+                                                        <th class="tabulation-player__points">Очки</th>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-1.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-1.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-1.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-1.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tabulation-player__group">
+                                                        <td class="tabulation-player__matches">1</td>
+                                                        <td class="tabulation-player__person tabulation-player-person">
+                                                            <div class="tabulation-player-person__img">
+                                                                <img src="./images/player-1.png" alt="player">
+                                                            </div>
+                                                            <div class="tabulation-player-person__right">
+                                                                <div class="tabulation-player-person__name">Ильин Арсений</div>
+                                                                <div class="tabulation-player-person__bottom">
+                                                                    <img src="./images/tab-team-1.svg" alt="team">
+                                                                    <div class="tabulation-player-person__team">Ястребы</div>
+                                                                    <div class="tabulation-player-person__position">Нападающий</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="tabulation-player__points tabulation-player-points">
+                                                            <div class="tabulation-player-points__amount">24</div>
+                                                            <div class="tabulation-player-points__calculation">5+19</div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="news news--main">
+                <div class="title__head">
+                    <div class="news__title title">Новости</div>
+                    <div class="news__link link link--right">Все новости</div>
+                </div>
+                <div class="news__row">
+                    <div class="news-card">
+                        <img class="news-card__img" src="./images/news-1.png" alt="news">
+                        <div class="news-card__bottom">
+                            <div class="news-card__date">18.05.2023</div>
+                            <div class="news-card__title">Кубок Александра Овечкина: второе золото «СКА-Стрельны» подряд</div>
+                            <a href="#"  class="news-card__button button">Подробнее
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="news-card">
+                        <img class="news-card__img" src="./images/news-1.png" alt="news">
+                        <div class="news-card__bottom">
+                            <div class="news-card__date">18.05.2023</div>
+                            <div class="news-card__title">Кубок Александра Овечкина: второе золото «СКА-Стрельны» подряд</div>
+                            <a href="#"  class="news-card__button button">Подробнее
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="news-card">
+                        <img class="news-card__img" src="./images/news-1.png" alt="news">
+                        <div class="news-card__bottom">
+                            <div class="news-card__date">18.05.2023</div>
+                            <div class="news-card__title">Кубок Александра Овечкина: второе золото «СКА-Стрельны» подряд</div>
+                            <a href="#"  class="news-card__button button">Подробнее
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="news-card">
+                        <img class="news-card__img" src="./images/news-1.png" alt="news">
+                        <div class="news-card__bottom">
+                            <div class="news-card__date">18.05.2023</div>
+                            <div class="news-card__title">Кубок Александра Овечкина: второе золото «СКА-Стрельны» подряд</div>
+                            <a href="#"  class="news-card__button button">Подробнее
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
     </main>
     <footer class="footer"></footer>
 </div>
