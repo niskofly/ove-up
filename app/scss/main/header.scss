@@ -5,6 +5,14 @@
   &-top{
     padding: 15px 0;
 
+    a{
+      transition: 0.3s;
+    }
+
+    a:hover{
+      color: #D20129;
+    }
+
     &__row{
       display: flex;
       flex-direction: row;

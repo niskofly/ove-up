@@ -17,6 +17,23 @@ $(function () {
         },
     });
 
+    //Слайдер с партнрами
+
+    let partners = new Swiper('.partners-slider', {
+        slidesPerView: 6,
+        spaceBetween: 40,
+        infinity: true,
+        loop: true,
+        keyboard: true,
+        rewind: true,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.partners-next',
+            prevEl: '.partners-prev',
+        },
+    });
+
     //Слайдер для статистики игроков на главной странице
 
     let players = new Swiper('.players-slider', {
@@ -33,8 +50,8 @@ $(function () {
     let tabContent = document.querySelectorAll('.tabulation-tour__group')
 
     tabs.forEach((tab, i) => {
-        tab.addEventListener('click', function (){
-            if(tab.classList.contains('active')){
+        tab.addEventListener('click', function () {
+            if (tab.classList.contains('active')) {
                 tab.classList.remove('active')
             }
             tabs.forEach((elem) => {
@@ -42,7 +59,7 @@ $(function () {
             })
             tab.classList.add('active')
 
-            if (tabContent[i].classList.contains('active')){
+            if (tabContent[i].classList.contains('active')) {
                 tabContent[i].classList.remove('active')
             }
             tabContent.forEach((elem) => {
