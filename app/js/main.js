@@ -46,8 +46,8 @@ $(function () {
 
     //Табы для турнирной таблицы для главной страницы
 
-    let tabs = document.querySelectorAll('.tab-card-tab')
-    let tabContent = document.querySelectorAll('.tab-content')
+    let tabs = document.querySelectorAll('.tab-card-js')
+    let tabContent = document.querySelectorAll('.tab-content-js')
 
     tabs.forEach((tab, i) => {
         tab.addEventListener('click', function () {
