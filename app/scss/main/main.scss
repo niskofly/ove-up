@@ -222,6 +222,12 @@
       align-self: center;
     }
 
+    th{
+      font-weight: 400;
+      font-size: 18px;
+      color: #888E9B;
+    }
+
     td:last-of-type{
       text-align: right;
     }
@@ -239,8 +245,6 @@
   }
 
   &-person{
-    display: flex;
-    align-items: center;
 
     &__img{
       margin-right: 30px;
@@ -283,6 +287,11 @@
       }
     }
 
+  }
+
+  &__link{
+    display: flex;
+    align-items: center;
   }
 
   .tabulation-player-points{

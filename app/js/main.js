@@ -4,7 +4,7 @@ $(function () {
 
     let matches = new Swiper('.matches-slider', {
         slidesPerView: 6,
-        spaceBetween: 20,
+        spaceBetween: 21,
         infinity: true,
         loop: true,
         keyboard: true,
@@ -46,8 +46,8 @@ $(function () {
 
     //Табы для турнирной таблицы для главной страницы
 
-    let tabs = document.querySelectorAll('.tab-tour-tab')
-    let tabContent = document.querySelectorAll('.tabulation-tour__group')
+    let tabs = document.querySelectorAll('.tab-card-tab')
+    let tabContent = document.querySelectorAll('.tab-content')
 
     tabs.forEach((tab, i) => {
         tab.addEventListener('click', function () {

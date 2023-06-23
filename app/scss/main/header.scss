@@ -1,6 +1,5 @@
 .header{
   background: #F5F5F5;
-  padding-bottom: 50px;
 
   &-top{
     padding: 15px 0;
@@ -50,7 +49,6 @@
     }
 
     &__vk{
-      margin-right: 50px;
       display: flex;
       align-items: center;
 
@@ -69,7 +67,6 @@
   &-bottom{
     background: #131F39;
     padding: 33px 0;
-    margin-bottom: 50px;
 
     &__logo{
       position: absolute;
@@ -86,9 +83,11 @@
     }
 
     &__link{
-      color: #fff;
+      font-family: 'Unbounded';
+      font-style: normal;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 18px;
+      color: #fff;
       letter-spacing: 0.1em;
       text-transform: uppercase;
 
@@ -103,11 +102,12 @@
 
     .container{
       position: relative;
+      padding: 0;
     }
 
     &-prev{
       position: absolute;
-      top: 50px;
+      top: 100px;
       left: -20px;
       z-index: 1;
       cursor: pointer;
@@ -116,9 +116,14 @@
     &-next{
       cursor: pointer;
       position: absolute;
-      top: 50px;
+      top: 100px;
       right: -20px;
       z-index: 1;
+    }
+
+    .matches-slider{
+      padding: 50px 15px;
+      width: 100%;
     }
 
     .swiper-slide{
@@ -130,7 +135,7 @@
       cursor: pointer;
 
       &:hover{
-        box-shadow: 0px 10px 30px rgba(43,58,95,.15);
+        box-shadow: 0px 10px 15px rgba(43,58,95,.15);
       }
 
       .match-date{
