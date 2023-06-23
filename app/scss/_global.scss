@@ -55,7 +55,7 @@ body {
 	background: #888E9B;
 	padding: 7px 20px;
 	padding-right: 46px;
-	clip-path: polygon(12px 0, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+	clip-path: polygon(14px 0, 100% 0%, calc(100% - 14px) 100%, 0% 100%);
 	position: relative;
 	cursor: pointer;
 	transition: 0.3s;
@@ -110,7 +110,7 @@ body {
 	font-size: 16px;
 	position: relative;
 	height: 40px;
-	clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+	clip-path: polygon(14px 0, 100% 0, calc(100% - 14px) 100%, 0 100%);
 	transition: 0.3s;
 
 

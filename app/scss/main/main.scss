@@ -83,7 +83,7 @@
     font-size: 16px;
     color: #FFFFFF;
     padding: 8px 28px;
-    clip-path: polygon(12px 0, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+    clip-path: polygon(14px 0, 100% 0%, calc(100% - 14px) 100%, 0% 100%);
     cursor: pointer;
     transition: 0.3s;
 
@@ -197,7 +197,7 @@
   }
 
   .tab-card-tab:first-of-type, .tab-card-tab:last-of-type{
-    clip-path: polygon(12px 0, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+    clip-path: polygon(14px 0, 100% 0%, calc(100% - 14px) 100%, 0% 100%);
     padding: 8px 20px;
   }
 
