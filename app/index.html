@@ -426,22 +426,77 @@
     <main class="main">
         <div class="container">
             <div class="pagination">
-                <a href="#" class="pagination__link"></a>
-                <a href="#" class="pagination__link pagination__link--last"></a>
+                <a href="#" class="pagination__link">Главная</a>
+                <a class="pagination__link pagination__link--last">Турниры</a>
             </div>
-            <div class="glossary__row">
+            <div class="glossary-row">
                 <div class="title-page">Турнирная таблица</div>
-                <div class="glossary">
-                    <div class="glossary__icon">
-                        <img src="./images/glossary.svg" alt="glossary">
-                        <div class="glossary__text">Глоссарий</div>
+                <div class="glossary-row__button">
+                    <div class="glossary-row__icon">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.82353 9.91177C8.49866 9.91177 8.23529 10.1751 8.23529 10.5C8.23529 10.8249 8.49866 11.0882 8.82353 11.0882H9.41177V14.6176H8.82353C8.49866 14.6176 8.23529 14.881 8.23529 15.2059C8.23529 15.5308 8.49866 15.7941 8.82353 15.7941H11.1765C11.5013 15.7941 11.7647 15.5308 11.7647 15.2059C11.7647 14.881 11.5013 14.6176 11.1765 14.6176H10.5882V10.5C10.5882 10.1751 10.3249 9.91177 10 9.91177H8.82353Z" fill="#888E9B"/>
+                            <path d="M11.1765 6.97059C11.1765 7.62034 10.6497 8.14706 10 8.14706C9.35025 8.14706 8.82353 7.62034 8.82353 6.97059C8.82353 6.32084 9.35025 5.79412 10 5.79412C10.6497 5.79412 11.1765 6.32084 11.1765 6.97059Z" fill="#888E9B"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5C4.47715 0.5 0 4.97715 0 10.5C0 16.0228 4.47715 20.5 10 20.5C15.5228 20.5 20 16.0228 20 10.5C20 4.97715 15.5228 0.5 10 0.5ZM1.17647 10.5C1.17647 5.6269 5.1269 1.67647 10 1.67647C14.8731 1.67647 18.8235 5.6269 18.8235 10.5C18.8235 15.3731 14.8731 19.3235 10 19.3235C5.1269 19.3235 1.17647 15.3731 1.17647 10.5Z" fill="#888E9B"/>
+                        </svg>
+                    </div>
+                    <div class="glossary-row-button__text">Глоссарий</div>
+                </div>
+            </div>
+
+            <div class="glossary">
+                <div class="glossary-columns">
+                    <div class="glossary-column">
+                        <div class="glossary__row">
+                            <span>М —</span>место в турнирной таблице
+                        </div>
+                        <div class="glossary__row">
+                            <span>К —</span>название команды
+                        </div>
+                        <div class="glossary__row">
+                            <span>И —</span>кол-во проведённых игр
+                        </div>
+                        <div class="glossary__row">
+                            <span>В —</span>кол-во побед
+                        </div>
+                        <div class="glossary__row">
+                            <span>ВО —</span>кол-во побед в овертаймах
+                        </div>
+                    </div>
+                    <div class="glossary-column">
+                        <div class="glossary__row">
+                            <span>ВБ —</span>кол-во побед в буллитах
+                        </div>
+                        <div class="glossary__row">
+                            <span>ПБ —</span>кол-во поражений в буллитах
+                        </div>
+                        <div class="glossary__row">
+                            <span>ПО —</span>кол-во поражений в овертаймах
+                        </div>
+                        <div class="glossary__row">
+                            <span>П —</span>кол-во поражений
+                        </div>
+                        <div class="glossary__row">
+                            <span>ШЗ —</span>кол-во забитых шайб
+                        </div>
+                    </div>
+                    <div class="glossary-column">
+                        <div class="glossary__row">
+                            <span>ШП —</span>кол-во пропущенных шайб
+                        </div>
+                        <div class="glossary__row">
+                            <span>(+/-) —</span>разница забитых/пропущенных шайб
+                        </div>
+                        <div class="glossary__row">
+                            <span>О —</span>кол-во очков в турнирной таблице
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="tab-tour__tabs tab-card__tabs">
-                <div class="tab-tour-tab tab-card-tab active">Группа А</div>
-                <div class="tab-tour-tab tab-card-tab">Группа Б</div>
-                <div class="tab-tour-tab tab-card-tab">Плей-офф</div>
+                <div class="tab-tour-tab tab-card-tab tab-card-js active">Группа А</div>
+                <div class="tab-tour-tab tab-card-tab tab-card-js">Группа Б</div>
+                <div class="tab-tour-tab tab-card-tab tab-card-js">Плей-офф</div>
             </div>
         </div>
     </main>
