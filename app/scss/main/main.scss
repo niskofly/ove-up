@@ -485,6 +485,7 @@
       bottom: 30px;
       left: 30px;
       max-width: 314px;
+      transition: 0.3s;
     }
 
     &:first-of-type{
@@ -638,4 +639,259 @@
     }
   }
 
+}
+
+.tournament{
+
+
+  &__row{
+    display: grid;
+    grid-template-columns: 90px 375px 105px 105px 105px 105px 105px 105px 105px 105px 105px 105px 105px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+    margin-bottom: 45px;
+    position: relative;
+
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -25px;
+      background: #E1E2E6;
+      height: 1px;
+      width: 100%;
+    }
+
+    th{
+      color: #888E9B;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+      text-align: left;
+    }
+  }
+
+}
+
+.tournament-team{
+  display: flex;
+  align-items: center;
+
+
+  img{
+    width: 60px;
+    height: 60px;
+  }
+
+  &__logo{
+    margin-right: 20px;
+  }
+
+  &__name{
+    color: #131F39;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  &__city{
+    color: #888E9B;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.main-tabulation{
+  &__content{
+    display: none;
+  }
+  &__content.active{
+    display: block;
+  }
+}
+
+.photo-gallery-page{
+  .photo-gallery__cards{
+    margin-bottom: 82px;
+  }
+}
+
+.translations__cards-more{
+  display: flex;
+  flex-wrap: wrap;
+
+  .translations-card{
+    flex: 0 0 calc((100% - 123px) / 4);
+    margin-right: 41px;
+    margin-top: 30px;
+
+    &:first-of-type{
+
+      .translations-card__bottom{
+        opacity: 0;
+        transition: 0.3s;
+      }
+    }
+
+    &:hover{
+      .translations-card__bottom{
+        opacity: 1;
+      }
+    }
+
+    &:nth-of-type(4n){
+      margin-right: 0;
+    }
+  }
+}
+
+.news-page{
+  .news__row{
+    margin-bottom: 90px;
+  }
+}
+
+.teams{
+
+  &-tab-content{
+    display: none;
+  }
+
+  &-tab-content.active{
+    display: block;
+  }
+
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-card{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    flex: 0 0 calc((100% - 80px) / 3);
+    border: 1px solid #D4D8E9;
+    background: #FFF;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &__title{
+      color: #131F39;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+      transition: 0.5s;
+    }
+
+    &:hover{
+      box-shadow: 0px 4px 20px 0px rgba(19, 31, 57, 0.10);
+      transform: translateY(-10px);
+    }
+
+    &:hover .teams-card__title{
+      color: #D20129;
+    }
+
+    &__logo{
+      margin-bottom: 50px;
+
+      img{
+        width: 280px;
+        height: 280px;
+        object-fit: contain;
+        margin: 0 auto;
+      }
+    }
+
+
+    &__city{
+      color: #888E9B;
+      font-size: 16px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+}
+
+.news-detail {
+
+  .news-next{
+    position: absolute;
+    right: 15px;
+    bottom: 55px;
+    cursor: pointer;
+  }
+
+  .news-prev{
+    position: absolute;
+    left: 15px;
+    bottom: 55px;
+    cursor: pointer;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__left {
+    flex: 0 1 49%;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__date {
+    color: #666;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;;
+    margin-bottom: 30px;
+  }
+
+  &__main-text {
+    color: #333;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    color: #333;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 70px;
+
+    p {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &__right {
+    max-width: 780px;
+    position: relative;
+  }
 }

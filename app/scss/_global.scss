@@ -6,6 +6,7 @@ body {
 	font-size: 18px;
 	color: #131F39;
 	background: #fff;
+	line-height: 1;
 }
 
 .wrapper {
@@ -200,13 +201,18 @@ body {
 }
 
 .glossary{
-	background: #F5F5F5;
-	padding: 75px 95px;
+	margin-bottom: 50px;
+	overflow: hidden;
+	max-height: 0;
+	transition-property: max-height;
+	transition: 0.5s;
 
 	&-columns{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		background: #F5F5F5;
+		padding: 75px 95px;
 	}
 
 	&__row{
@@ -224,6 +230,12 @@ body {
 			margin-bottom: 0;
 		}
 	}
+}
+
+.pages__tab-row{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
 }
 
 

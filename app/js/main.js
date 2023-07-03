@@ -69,4 +69,18 @@ $(function () {
         })
     })
 
+    // Глоссарий
+
+    let glossaryButton = document.querySelector('.glossary-row__button')
+    let glossary = document.querySelector('.glossary')
+
+        glossaryButton.addEventListener('click', function (){
+            glossary.classList.toggle('active')
+            if (glossary.classList.contains('active')){
+                glossary.style.maxHeight = glossary.scrollHeight + 'px'
+            } else {
+                glossary.style.maxHeight = 0
+            }
+        })
+
 })
